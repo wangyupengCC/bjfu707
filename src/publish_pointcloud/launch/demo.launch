@@ -1,0 +1,17 @@
+<launch>
+  <node name="publish_pointcloud" pkg="publish_pointcloud" type="publish_pointcloud">
+	<param name="path" value="/home/wanggong/catkin_ws/src/publish_pointcloud/data/Map.pcd"/>
+	<param name="frame_id" value="map" />
+	<param name="topic" value="/Point_Cloud_Map" />
+	<param name="hz" value="50"/>
+  </node>
+	<!-- Load ocotmap launch -->
+	<include file="$(find publish_pointcloud)/launch/octomaptransform.launch" />
+	<!-- RViz -->
+	<node pkg="rviz" type="rviz" name="$(anon rviz)" respawn="false" args="-d $(find publish_pointcloud)/rviz/octomap.rviz"/>
+</launch>
+
+ 
+
+		
+ 

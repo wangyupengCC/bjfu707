@@ -1,0 +1,29 @@
+%YAML:1.0
+
+Function: "Test"
+
+FilePaths:
+  TrainPath: "/home/wanggong/catkin_ws/src/save_rgbd/data/data1"
+  VocabPath: "/home/wanggong/WANGGONG_SLAM/My_SLAM/Vocabulary"
+
+KeyFramePath: "/home/wanggong/catkin_ws/src/save_rgbd/data/data1"
+
+FeatureOptions:
+  ORB:
+    nFeatures: 500
+    scaleFactor: 1.2
+    nLevels: 8
+    edgeThreshold: 31
+    firstLevel: 0
+    patchSize: 31
+
+
+GenVocabOptions:
+  K: 7
+  L: 5
+
+ORBextractor.nFeatures: 1000
+ORBextractor.scaleFactor: 1.2
+ORBextractor.nLevels: 8
+ORBextractor.iniThFAST: 20
+ORBextractor.minThFAST: 7

@@ -1,0 +1,7 @@
+<launch>
+    <node name="save_rgbd_node" pkg="save_rgbd" type="save_rgbd_node" output="screen">
+        <param name="rgb_topic" value="/KeyFrame/RGB"/>
+        <param name="depth_topic" value="/KeyFrame/Depth"/>
+        <param name="SaveDataPath" value="/home/wanggong/catkin_ws/src/save_rgbd/data/data1/"/>
+    </node>
+</launch>

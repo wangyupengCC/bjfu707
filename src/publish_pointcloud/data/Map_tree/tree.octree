@@ -1,0 +1,8 @@
+{
+	"name":	"",
+	"version":	3,
+	"pointtype":	"urp",
+	"lod":	4,
+	"numpts":	[0, 0, 0, 0, 642266],
+	"coord_system":	"ECEF"
+}

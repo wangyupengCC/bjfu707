@@ -1,0 +1,10 @@
+<launch>
+      <node pkg="save_image_imu" type="save_image_imu_node" name="save_image_imu_node" output = "screen">
+            <param name = "color_topic" value = "/camera/color/image_raw"/>
+            <param name = "depth_topic" value = "/camera/depth/image_rect_raw"/>
+            <param name = "left_topic" value = "/camera/infra1/image_rect_raw"/>
+            <param name = "right_topic" value = "/camera/infra2/image_rect_raw"/>
+            <param name = "imu_topic" value = "/camera/imu"/>
+            <param name = "SavePath" value = "/home/wanggong/catkin_ws/src/save_image_imu/data/2/"/>
+      </node>
+ </launch>
